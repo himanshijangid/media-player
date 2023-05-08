@@ -1,6 +1,6 @@
 const img = document.querySelector("img");
 const audio = document.querySelector("audio");
-const play = document.getElementById("play");
+const playy = document.getElementById("play");
 const next = document.getElementById("next");
 const prev = document.getElementById("prev");
 
@@ -31,13 +31,13 @@ let isPlaying = false;
 const playAudio = () => {
     isPlaying = true;
     audio.play();
-    play.className.replace("fa-play", "fa-pause");
+    playy.className.replace("fa-play", "fa-pause");
 };
 
 const pauseAudio = () => {
     isPlaying = false;
     audio.pause();
-    play.className.replace("fa-pause", "fa-play");
+    playy.className.replace("fa-pause", "fa-play");
 };
 
 play.addEventListener("click",() => {
